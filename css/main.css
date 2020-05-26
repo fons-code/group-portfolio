@@ -59,6 +59,7 @@ body {
   font: 4.5rem 'moon';
   text-transform: uppercase;
   letter-spacing: 8px;
+  text-align: center;
 }
 
 .header-title h3 {
