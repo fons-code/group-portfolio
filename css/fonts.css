@@ -1,0 +1,11 @@
+@font-face {
+  src: url('../assets/fonts/Cousine-Bold.ttf');
+  font-family: 'cousine';
+  font-display: swap;
+}
+
+@font-face {
+  src: url('../assets/fonts/Moon2.0-Regular.otf');
+  font-family: 'moon';
+  font-display: swap;
+}
