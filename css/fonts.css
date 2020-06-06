@@ -9,3 +9,16 @@
   font-family: 'moon';
   font-display: swap;
 }
+
+@font-face {
+  src: url('../assets/fonts/Moon2.0-Bold.otf');
+  font-family: 'moon-bold';
+  font-weight: bold;
+  font-display: swap;
+}
+
+@font-face {
+  src: url('../assets/fonts/SourceSansPro-Regular.ttf');
+  font-family: 'source-sans';
+  font-display: swap;
+}
