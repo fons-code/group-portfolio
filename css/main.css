@@ -114,14 +114,15 @@ body {
 .cards-container {
   display: flex;
   justify-content: center;
+  margin-bottom: 30px;
 }
 
 .card {
   flex-basis: 19%;
   display: flex;
   flex-direction: column;
-  height: 285px;
-  margin: 0 20px;
+  height: 300px;
+  margin: 0 15px;
   background-color: #fff;
   border-radius: 15px;
   overflow: hidden;
@@ -151,16 +152,4 @@ body {
 
 .card .card-content p {
   font: 1rem 'source-sans';
-}
-
-/*bx slider styles*/
-.bx-wrapper {
-  border-color: #e9ecf4 !important;
-  background-color: #e9ecf4 !important;
-  box-shadow: none !important;
-}
-
-.bx-viewport {
-  height: auto !important;
-  padding: 10px 0 !important;
 }
