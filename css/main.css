@@ -23,7 +23,7 @@ body {
 
 .header-menu {
   width: 100%;
-  height: 60px;
+  height: 45px;
   background-color: rgba(217, 121, 37, .5);
 }
 
@@ -33,7 +33,7 @@ body {
   align-items: center;
   height: inherit;
   margin-right: 20px;
-  font: 1rem 'cousine';
+  font: .95rem 'cousine';
 }
 
 .header-menu ul li a{
@@ -69,13 +69,15 @@ body {
 }
 
 .about,
-.skills {
+.skills,
+.projects {
   width: 100%;
   margin-bottom: 80px;
 }
 
 .about h2,
-.skills h2 {
+.skills h2,
+.projects h2 {
   text-align: center;
   font: 2.5rem 'moon';
   text-transform: uppercase;
@@ -112,13 +114,15 @@ body {
 }
 
 .cards-container {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  row-gap: 20px;
+  justify-items: center;
 }
 
 .card {
-  flex-basis: 28%;
+  width: 80%;
   display: flex;
   flex-direction: column;
   height: 300px;
@@ -154,6 +158,75 @@ body {
 .card .card-content p {
   line-height: 28px !important;
   font: 1rem 'source-sans';
+}
+
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, auto);
+  row-gap: 20px;
+  justify-items: center;
+  padding: 0 72px;
+}
+
+.project {
+  background-color: #ccc;
+  width: 80%;
+  min-width: 226px;
+  height: 350px;
+  overflow: hidden;
+  border-radius: 5px;
+  cursor: default;
+}
+
+.project img {
+  height: inherit;
+  width: 100%;
+  display: block;
+}
+
+.project-description {
+  padding: 15px;
+  display: none;
+}
+
+.project-description h3 {
+  text-transform: capitalize;
+  letter-spacing: .2px;
+  font: 1.2rem 'moon-bold';
+  margin-bottom: 20px;
+}
+
+.project-description p {
+  line-height: 25px !important;
+  text-align: justify;
+  font: 1rem 'source-sans';
+  margin-bottom: 20px;
+}
+
+.project-description button {
+  padding: 8px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  background-color: rgba(217, 121, 37);
+}
+
+.project-description button a {
+  color: #fff;
+  text-decoration: none;
+  font: 1rem 'source-sans';
+}
+
+.project-rotate {
+  transform: rotateY(180deg);
+  transition: transform 450ms;
+  transition-timing-function: linear;
+}
+
+.project-description-rotate {
+  display: block;
+  transform: rotateY(180deg);
 }
 
 @media only screen and (max-width: 768px) {
